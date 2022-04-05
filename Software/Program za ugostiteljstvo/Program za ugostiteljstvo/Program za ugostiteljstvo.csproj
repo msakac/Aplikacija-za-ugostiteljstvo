@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{289D6FB1-E1F1-4D3C-B4AF-192E0E6E7303}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Program_za_ugostiteljstvo</RootNamespace>
+    <AssemblyName>Program za ugostiteljstvo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.13.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.13.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forme\FrmArtikli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmArtikli.designer.cs">
+      <DependentUpon>FrmArtikli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FrmBlagajna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmBlagajna.designer.cs">
+      <DependentUpon>FrmBlagajna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FrmGlavna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmGlavna.designer.cs">
+      <DependentUpon>FrmGlavna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FrmIzradaRacuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmIzradaRacuna.designer.cs">
+      <DependentUpon>FrmIzradaRacuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FrmIzvjesca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmIzvjesca.designer.cs">
+      <DependentUpon>FrmIzvjesca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FrmKorisnici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmKorisnici.designer.cs">
+      <DependentUpon>FrmKorisnici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmLogin.designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmMessageBox.designer.cs">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FrmPocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmPocetna.designer.cs">
+      <DependentUpon>FrmPocetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FrmSkladiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmSkladiste.designer.cs">
+      <DependentUpon>FrmSkladiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klase\Artikl.cs" />
+    <Compile Include="Klase\ArtiklRepository.cs" />
+    <Compile Include="Klase\Database.cs" />
+    <Compile Include="Klase\Korisnik.cs" />
+    <Compile Include="Klase\KorisnikRepository.cs" />
+    <Compile Include="Klase\Racun.cs" />
+    <Compile Include="Klase\RacunRepository.cs" />
+    <Compile Include="Klase\StavkeRacuna.cs" />
+    <Compile Include="Klase\StavkeRacunaRepository.cs" />
+    <Compile Include="Klase\TipArtikl.cs" />
+    <Compile Include="Klase\TipArtiklRepository.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forme\FrmArtikli.resx">
+      <DependentUpon>FrmArtikli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FrmBlagajna.resx">
+      <DependentUpon>FrmBlagajna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FrmGlavna.resx">
+      <DependentUpon>FrmGlavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FrmIzradaRacuna.resx">
+      <DependentUpon>FrmIzradaRacuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FrmIzvjesca.resx">
+      <DependentUpon>FrmIzvjesca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FrmKorisnici.resx">
+      <DependentUpon>FrmKorisnici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FrmMessageBox.resx">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FrmPocetna.resx">
+      <DependentUpon>FrmPocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FrmSkladiste.resx">
+      <DependentUpon>FrmSkladiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_user.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_kafa.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Logoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pocetnaBackground.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

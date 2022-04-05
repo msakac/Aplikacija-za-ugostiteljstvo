@@ -1,0 +1,4 @@
+- 16.09.2020. ispit: 23 boda, AD: ok, ERA:ok
+- 16.07.2020. ispit, 17 bodova. Kolega Sakac ima pravo izlaska na ispit:  UCD: nije u potpunosti ok. AD: ima nedostataka. App jako dobro
+- 08.05.2020. 11 bodova - ERA:nisam pobornik agregiranih atributa u entitetu, mogao bi prijeći preko ukupan na racunu, ali na stavkama to nema smisla. Inace je ok. UCD: sustav nije actor. Generalno nije ok  niti jedan UCD dijagram jer prikazujete logiku a ne funkcionalnosti. AD: dijagrame će u konačnici trebati uskladiti s aplikacijom.Tehničku dokumentaciju u finalnoj verziji obavezno napraviti po IEEE SRS
+- 14.3.2020. prijava projekta: U redu, molim dodajte funkcionalnost alarmnih količina za pojedine artikle; i naravno alarm kada količina padne ispod alarmne
